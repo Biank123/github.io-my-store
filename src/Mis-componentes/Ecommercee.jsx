@@ -74,7 +74,7 @@ const Ecommercee = ({ addToCart, cart }) => {
       <div className="store-container">
         {filteredItems.length > 0 ? (
           filteredItems.map(item => (
-            <Link key={item.id} to={`/my-store/product/${item.id}`} className="product-card">
+            <Link key={item.id} to={`/product/${item.id}`} className="product-card">
               <img src={item.image} alt={item.title} />
               <h3>{item.title}</h3>
               <p><strong>Precio:</strong> ${item.price}</p>

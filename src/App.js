@@ -84,10 +84,10 @@ function App() {
   };
 
   return (
-    <Router basename="">
+    <Router basename="/my-store">
       <div>
         <header className="header">
-        <Link to="/my-store" style={{ textDecoration: 'none', color: 'inherit' }}> {/* Enlace a Ecommercee */}
+        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}> {/* Enlace a Ecommercee */}
         <h1 style={{ lineHeight: '1' }}>My Store</h1>
       </Link>
           <div className="header-right">
@@ -103,11 +103,11 @@ function App() {
 
         <Routes>
           <Route 
-            path="/my-store" 
+            path="/" 
             element={<Ecommercee addToCart={addToCart} cart={cart} searchTerm={searchTerm} />} 
           />
           <Route 
-            path="/my-store/product/:id" 
+            path="/product/:id" 
             element={<ProductDetailWrapper addToCart={addToCart} cart={cart} />} 
           />
         </Routes>
