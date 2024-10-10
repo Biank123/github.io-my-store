@@ -84,7 +84,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/my-store">
       <div>
         <header className="header">
         <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}> {/* Enlace a Ecommercee */}
