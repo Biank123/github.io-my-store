@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #084d56b6;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffffce;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Añadido para permitir la posición absoluta del carrito */
+}
+
+.header input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Nueva clase para el contenedor del carrito */
+.cart-icon {
+    position: absolute; /* Cambiar a absolute para posicionar en la esquina superior derecha */
+    right: 20px; /* Separación desde la derecha */
+    top: 10px; /* Separación desde la parte superior */
+    cursor: pointer;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+  
+  .filter-buttons,
+  .sort-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .filter-buttons button,
+  .sort-buttons button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1b5c6e;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .filter-buttons button:hover,
+  .sort-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .store-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: rgba(255, 255, 255, 0.887);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .product-detail-container {
+    display: flex; /* Usamos flexbox para alinear elementos en fila */
+    align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+    background-color: #c0e6efd0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 20px auto; /* Centra el contenedor horizontalmente */
+}
+
+.product-image {
+    flex: 1; /* Toma el 50% del espacio disponible */
+    margin-right: 20px; /* Espaciado entre imagen y contenido */
+}
+
+.product-info {
+    flex: 1; /* Toma el 50% del espacio disponible */
+    text-align: left;
+}
+  
+  .product-detail-container .product-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  .product-card button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .product-card button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+  }
+  .cart-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  .cart-icon {
+    font-size: 24px; /* Ajusta el tamaño según sea necesario */
+    margin-left: 20px; /* Espaciado con respecto al input de búsqueda */
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -5px; /* Ajusta la posición del conteo */
+    right: -10px; /* Ajusta la posición del conteo */
+    background: red; /* Color de fondo */
+    border-radius: 50%; /* Redondeado */
+    padding: 2px 5px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Negrita */
+  }

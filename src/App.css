@@ -1,0 +1,18 @@
+.cart-button {
+  background: none; /* Elimina el fondo del botón */
+  border: none; /* Elimina el borde del botón */
+  cursor: pointer; /* Cambia el cursor a puntero */
+  display: flex; /* Para alinear el ícono y el texto */
+  align-items: center; /* Alinea verticalmente */
+  margin-top: 10px;
+}
+
+.cart-icon {
+  font-size: 24px; /* Ajusta el tamaño del ícono (emoji) */
+  margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+/* Opcional: agregar un efecto hover */
+.cart-button:hover .cart-icon {
+  transform: scale(1.2); /* Aumentar el tamaño al pasar el mouse */
+}
